@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Dancing+Script&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+.nav{
+    width: 100%;
+    height: 80px;
+    padding: 0 3vw;
+    background-color: #050505;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    /* border-bottom: 0.05px solid black; */
+}
+
+.nav .logo{
+    display: flex;
+    /* background-color: #FF550F; */
+    gap: 0.5vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav .logo .abc{
+    font-size: 4vw;
+    font-weight: 10;
+    padding: 0;
+    margin: 0;
+}
+
+.nav .logo i{
+    font-size: 3vw;
+    color: #FF550F;
+}
+
+.sub-nav{
+    display: flex;
+    gap: 1.6vw;
+}
+
+.nav h2{
+    font-size: 2.1vw;
+    color: #FF550F;
+}
+
+.nav h4{
+    font-size: 1.2vw;
+}
+
+.nav .fa-bars{
+    display: none;
+}
+
+.nav .fa-right-to-bracket{
+    font-size: 1.4vw;
+}
+
+.nav button{
+    width: 6vw;
+    height: 4vh;
+    font-size: 1.2vw;
+    border-radius: 0.3vw;
+    border: none;
+    text-align: center;
+    /* padding: 0 1rem; */
+    background-color: #ffffff;
+    font-weight: 600;
+}
+
+.content{
+    width: 100%;
+    height: calc(100vh - 80px);
+    /* background-color: crimson; */
+    display: flex;
+    position: relative;
+}
+
+ .content .left{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(201, 86, 86); */
+    padding: 0 3vw;
+}
+
+.content .left h1{
+    margin-top: 7vw;
+    font-size: 4vw;
+    line-height: 7vw;
+    font-weight: bolder;
+    font-family: 'Calligraffitti', cursive;
+}
+
+.content .left h1 .sp1{
+    color: #FF550F;
+    text-decoration:line-through;
+}
+
+.content .left h1 span{
+    color: #09319B;
+}
+
+.content .left p{
+    width: 90%;
+    font-size: 1.1vw;
+    margin-top: 1.5vw;
+    margin-bottom: 2vw;
+    line-height: 1.7vw;
+    font-style: italic;
+}
+
+.content .left button{
+    width: 12vmax;
+    height: 4vmax;
+    font-size: 1.5vw;
+    text-align: center;
+    border-radius: 1vw;
+    border: none;
+    background-color: rgba(144, 142, 142, 0.195);
+    color: #09319B;
+}
+
+.content .left button i{
+    color: #FF550F ;
+}
+.content .right{
+    width: 50%;
+    height:100%;
+    /* background-color: rgb(76, 202, 76); */
+}
+
+.content .right img{
+   width: 100%;
+   height: 99%;
+}
+
+
+/* .content2 h1{
+    text-align: center;
+    font-size: 5vw;
+    margin-top: 2vw;
+} */
+
+
+
+
+
+@media (max-width: 600px) {
+    .nav{
+        height: 70px;
+    }
+    .nav .logo i{
+        font-size: 3.5vh;
+    }
+    .nav .logo .abc{
+        font-size: 3.5vh;
+    }
+    .nav h2{
+        font-size: 3.5vh;
+    }
+    .nav h4{
+        display: none;
+    }
+
+    .nav .fa-bars{
+        display: block;
+        font-size: 3.5vh;
+    }
+    .nav .fa-right-to-bracket{
+       display: none;
+    }
+
+    .content{
+        height: calc(100vh - 70px);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content .left{
+        width: 100%;
+        height: 55%;
+    }
+
+    .content .left h1{
+        font-size: 5vh;
+        line-height: 9vh;
+    }
+
+    .content .left p{
+        font-size: 1.5vh;
+        line-height: 2vh;
+    }
+
+    .content .left button{
+        width: 20vh;
+        height: 6vh;
+        font-size: 2.5vh;
+        border: none;
+        background-color: rgba(144, 142, 142, 0.195);
+        color: #09319B;
+    }
+
+    .content .right{
+        width: 100%;
+        height: 45%;
+    }
+}
